@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ExploreRaipur</title>
+    <link rel="icon" href="resources/letter-a.png" type="image/x-icon">
+    <link rel="stylesheet" href="raipur.css">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="map.html">Map</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="news.html">News</a></li>
+                  <li><a class="dropdown-item" href="gallary.html">Gallary</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+            </ul>
+            </div>
+            <button class="btn btn-outline-light" id="darkModeToggle" onclick="toggleDarkMode()" ><img src="resources/day-and-night.png" alt="Icon" style="width: 30px; height: 30px; vertical-align: middle;"></button>
+        </div>
+      </nav>
+  <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+  <div class="video">
+  <video autoplay muted loop id="myVideo">
+    <source src="resources\shortvideo.mp4" type="video/mp4">
+  </video>
+  </div>
+  
+  <!-- Optional: some overlay text to describe the video -->
+  <div class="content">
+    <h1>Raipur</h1>
+    <p>The City Of Dream</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+  </div>  
+
+  
+  <script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+    
+    // Get the button
+    var btn = document.getElementById("myBtn");
+
+    var moreBtn = document.getElementById("moreBtn");
+  
+
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    function scrollToIntro() {
+      document.getElementById("intro").scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+
+    function toggleDarkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    
+      // Optional: Save user preference to localStorage
+      if (element.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+      } else {
+        localStorage.setItem("theme", "light");
+      }
+    }
+    
+    // Check user preference on page load (optional)
+    document.addEventListener("DOMContentLoaded", function() {
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+      }
+    });
+  </script>
+
+<!-- </div>
+<div class="intro">
+  <h1>introduction</h1>
+  <p>
+    Raipur, the vibrant capital of Chhattisgarh, is a city that beautifully blends history, culture, and modernity. Located in the heart of India, Raipur is not only the administrative and political hub of the state but also a burgeoning center for trade, commerce, and education. Established as a prominent city in ancient times, Raipur has evolved significantly, marking its journey from a historic town to a dynamic metropolis.
+  </p>
+  <p>
+    Historically, Raipur has roots that trace back to the 9th century, a period during which it was part of the Dakshina Kosala Kingdom. Over centuries, it saw the rise and fall of several dynasties, including the Mauryas, Satavahanas, and the Kalachuris, each leaving an indelible mark on the city's cultural and architectural landscape. The remnants of these eras can still be seen in various historical sites and monuments, such as the Mahant Ghasidas Memorial Museum and the ancient ruins scattered around the region.
+  </p>
+  
+  </p> -->
+  
+  
+ 
+
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------------------------- -->
+
+<div class="container">
+  <div class="section news-updates">
+      <h3>(C.G)Cabinet Ministers List</h3>
+      <ul>
+          <li><b>Vishnu Deo Sai</b>
+            <p>(Chief Minister of Chhattisgarh)</p>
+          </li>
+          <li><b>Vijay Sharma</b>
+            <p>(Minister of Home Affairs)</p>
+          </li>
+          <li>
+            <b>Arun Sao</b>
+            <p>(Minister of Finance)</p>
+          </li>
+          
+          <li>
+            <b>O P Choudhary</b>
+            <p>(Minister of Agriculture)</p>
+          </li>
+          <li>
+            <b>Brijmohan Agrawal</b>
+            <p>(Minister of Education)</p>
+          </li>
+        
+      </ul>
+      <a href="https://www.oneindia.com/chhattisgarh-cabinet-ministers-list/"><button type="button" class="btn btn-outline-warning">Viwe More</button></a>
+  </div>
+  <div class="glance">
+      <h3>DISTRICT AT A GLANCE</h3><br>
+      <p><img src="resources/radar.png" alt="Icon" style="width: 18px; height: 18px; vertical-align: middle;"><strong> Area:</strong> 157.0 sq km</p>
+      <p><img src="resources/group.png" alt="Icon" style="width: 18px; height: 18px; vertical-align: middle;"><strong> Population:</strong> 30,85,411</p>
+      <p><img src="resources/man.png" alt="Icon" style="width: 18px; height: 18px; vertical-align: middle;"><strong> Male Population:</strong> 1,822,174</p>
+      <p><img src="resources/woman.png" alt="Icon" style="width: 18px; height: 18px; vertical-align: middle;"><strong> Female Population:</strong> 1,531,123</p>
+      <p><img src="resources/literacy.png" alt="Icon" style="width: 18px; height: 18px; vertical-align: middle;"><strong> Literacy Rate:</strong> 89.2%</p>
+      <p><img src="resources/city-hall.png" alt="Icon" style="width: 18px; height: 18px; vertical-align: middle;"><strong> Municipal Corporation:</strong> 1</p>
+  </div>
+  
+  <div class="officer-info">
+    
+    
+    <img src="resources/v4hf296_gaurav-singh_625x300_06_January_24.webp" alt="Icon" style="width: 250px; height: 250px; vertical-align: middle;"><br>
+    <h5><b>Collector & District Magistrate</b></h5>
+    <h6>Dr. Gaurav Kumar Singh (I.A.S.)</h6>
+    <p><a href="#">Facebook</a> | <a href="https://x.com/gaurav_ias2013?s=21">Twitter</a></p>
+    <a><img src="resources/facebook.png" alt="Icon" style="width: 30px; height: 30px; vertical-align: middle h;"></a>
+    <a href="https://x.com/gaurav_ias2013?s=21"><img src="resources/twitter.png" alt="Icon" style="width: 30px; height: 30px; vertical-align: middle;"></a>
+
+  </div> 
+  <!-- The Modal -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+  <div id="caption"></div>
+</div>
+</div>
+
+<div class="container">
+  <div class="section-h">
+    <h3>PUBLIC UTILITIES</h3>
+    <p><b>NGOs  </b><img src="resources/minus.png" style="width: 100px; height: 50px;"><img src="resources/137.png" style="width: 30px; height: 30px;"> <b>  Universities  </b><img src="resources/minus.png" style="width: 100px; height: 50px;"><img src="resources/six.png" style="width: 30px; height: 30px;"></p>
+    <p><b>Banks  </b><img src="resources/minus.png" style="width: 100px; height: 50px;"><img src="resources/117.png" style="width: 30px; height: 30px;">  <b>  Hospitals  </b><img src="resources/minus.png" style="width: 100px; height: 50px;"><img src="resources/four.png" style="width: 30px; height: 30px;"></p>
+    <p><b>  Postal  </b><img src="resources/minus.png" style="width: 100px; height: 50px;"><img src="resources/one.png" style="width: 30px; height: 30px;"><b>Municipal Corporation  </b><img src="resources/minus.png" style="width: 100px; height: 50px;"><img src="resources/one.png" style="width: 30px; height: 30px;"></p>
+  </div>
+
+
+  <div class="section-i">
+    <h3>TOURIST GUIDE</h3><br>
+    <p><b>How To Reach</b></p>
+    <p><b>Accomodation</b></p>
+    <p><b>Place Of Interest</b></p>
+    <p><b>Tourist Packages</b></p>
+    <p><b>Tourist Places
+    </b></p>
+</div>
+<div class="section-i">
+  <div class="guide">
+  <h3>HELPLINE NUMBER</h3><br>
+  <p><b>Citizen's Call center - 155300</b></p>
+  <p><b>Child Helpline - 1098</b></p>
+  <p><b>Women Helpline - 1091</b></p>
+  <p><b>Service Desk- 1800111555</b></p>
+  </div>
+</div>
+</div>
+
+
+<div class="card">
+    <div class="row">
+      <div class="col">
+        <img src="resources/letter-a.png" class="logo" >
+        <p>I am an MCA student with a passion for web development. I recently created the 'Explore Raipur' website, which showcases my skills in designing and developing web platforms. The project highlights my interest in combining technology with local culture to provide useful resources for people exploring the city.
+        </p>
+      </div>
+      <div class="col">
+        <h5>Office<div class="underline"><span></span></div></h5>
+        <p>Nucleusteq Raipur
+        2nd Floor, Serenity Tower, Great Eastern Rd
+        opposite Anupam Garden, Geeta Nagar, Raipur, Chhattisgarh 492001.</p>
+        <p id="email-id">sanskar.patwa030@gmail.com</p>
+        <h6>+91-79869956518</h6>
+      </div>
+      <div class="col">
+        <h5>Links<div class="underline"><span></span></div></h5>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="map.html">MAP</a></li>
+          <li><a href="gallary.html">GALLARY</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          </ul>
+        </ul>
+      </div>
+      <div class="col">
+        <h5>Newsletter<div class="underline"><span></span></div></h5>
+        <form>
+          <img class="far" src="resources/mail.png" style="width: 30px; height: 30px;">
+          <input type="email" placeholder="Enter Your email id" required > 
+          <button type="submit"><img src="resources/right-arrow (1).png" class="fas" style="width: 20px; height: 20px;"></button>
+        </form>
+        <div class="social-icons">
+          <img class="fab" src="resources/facebook.png">
+          <img class="fab" src="resources/twitter.png">
+          <img class="fab" src="resources/whatsapp.png">
+          <img class="fab" src="resources/social.png">
+  
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy;2026 NucleusTeq. All rights reserved.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+    
+    
